@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    flex: 0.4;
+    display: flex;
+    max-width: max-content;
+    flex-direction: column;
+    padding:10px 30px;
+    border-right: 1px solid silver;
+}
+
+.mainfeed {
+    flex: 0.6;
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.mainfeed::-webkit-scrollbar {
+  display: none;
+}
+
+.searchandwidgets {
+    flex: 0.3;
+    padding: 10px 20px; 
+    border-left: 1px solid silver;  
+}
